@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador de textos</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" href="Vector.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+
+        <header>
+            <div class="divHeader">
+                <h1><img src="imagenes/Logo.png" class="imgHeader" alt="logo" id="logo"></h1>
+            </div>
+        </header>
+
+        <main class="conteiner">  
+            
+            <section class="encriptacion">
+                
+                <form class="formEncriptacion">
+                    
+                    <div class="divTextarea">
+                        <textarea id="texto-entrada" nombre ="textoEntrada" placeholder="Ingrese texto aquí" cols="50" rows="10" class="textareaEncriptacion"></textarea>
+                    </div>
+                    
+                    <div class="divAvisoEscritura">
+                        <p class="avisoEscritura"><img src="imagenes/Vector.png" class="signoExclamacion" alt="signoExclamacion">Solo letras minusculas y sin acento</p>
+                    </div>
+                    
+                    <div class="divBotonesFormulario">
+                        <fieldset class="botonesFormulario">
+                            <button class="botonEncriptar" id="botonEncriptacion">Encriptar</button>
+                            <button class="botonDesencriptar">Desencriptar</button>
+                        </fieldset>
+                    </div>
+                </form>
+            </section>
+            
+            <section class="desencriptacion">
+
+                <textarea class="textoDesencriptado" readonly></textarea>
+                <div class="contenedorImagenMuñeco">
+                    <img src="imagenes/Muñeco.png" class="imgMuñeco" alt="ImagenMuñeco">
+                </div>
+                <p class="avisoTextoFaltante">Ningun mensaje fue encontrado</p>
+                <p class="avisoIngresarTexto">Ingrese el texto que desees encriptar o desencriptar</p>
+                <button class="botonCopiar">Copiar</button>
+
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <ul class="footer__ul"> 
+                <li class="footer__li"><a href="https://github.com/davidmarinich"><i class="fa-brands fa-github-square icon"></i></a></li>
+                <li class="footer__li"><a href="https://www.linkedin.com/in/david-marinich-903a37234/"><i class="fa-brands fa-linkedin icon"></i></a></li>
+            </ul>
+        </footer>
+
+        <script src="js/encriptacion.js"></script>
+        <script src="https://kit.fontawesome.com/1dd7ab6447.js" crossorigin="anonymous"></script>
+        
+    </body>
+    
+
+</html>
