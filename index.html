@@ -6,15 +6,20 @@
         <title>Encriptador de textos</title>
         <link rel="icon" href="Vector.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/body.css">
+        <link rel="stylesheet" type="text/css" href="css/header/header.css">
+        <link rel="stylesheet" type="text/css" href="css/main-conteiner/conteiner.css">
+        <link rel="stylesheet" type="text/css" href="css/main-conteiner/encriptacion.css">
+        <link rel="stylesheet" type="text/css" href="css/main-conteiner/desencriptacion.css">
+        <link rel="stylesheet" type="text/css" href="css/footer/footer.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
     </head>
     
     <body>
 
         <header>
-            <div class="divHeader">
-                <h1><img src="imagenes/Logo.png" class="imgHeader" alt="logo"></h1>
+            <div class="header__div">
+                <h1><img src="imagenes/Logo.png" class="header__img" alt="logo"></h1>
             </div>
         </header>
 
@@ -22,20 +27,20 @@
             
             <section class="encriptacion">
                 
-                <form class="formEncriptacion">
+                <form class="encriptacion__form">
                     
-                    <div class="divTextarea">
-                        <textarea id="texto-entrada" nombre ="textoEntrada" placeholder="Ingrese texto aquí" cols="50" rows="10" class="textareaEncriptacion"></textarea>
+                    <div class="encriptacion__divTextarea">
+                        <textarea id="texto-entrada" nombre ="textoEntrada" placeholder="Ingrese texto aquí" cols="50" rows="10" class="encriptacion__textAerea"></textarea>
                     </div>
                     
-                    <div class="divAvisoEscritura">
-                        <p class="avisoEscritura"><img src="imagenes/Vector.png" class="signoExclamacion" alt="signoExclamacion">Solo letras minusculas y sin acento</p>
+                    <div class="encriptacion__divAvisoEscritura">
+                        <p class="encriptacion__avisoEscritura"><img src="imagenes/Vector.png" class="encriptacion__signoExclamacion" alt="signoExclamacion">Solo letras minusculas y sin acento</p>
                     </div>
                     
-                    <div class="divBotonesFormulario">
-                        <fieldset class="botonesFormulario">
-                            <button class="botonEncriptar" id="botonEncriptacion">Encriptar</button>
-                            <button class="botonDesencriptar">Desencriptar</button>
+                    <div class="encriptacion__divBotonesFormulario">
+                        <fieldset class="encriptacion__botonesFormulario">
+                            <button class="encriptacion__botonEncriptar" id="botonEncriptacion">Encriptar</button>
+                            <button class="encriptacion__botonDesencriptar">Desencriptar</button>
                         </fieldset>
                     </div>
                 </form>
@@ -43,14 +48,14 @@
             
             <section class="desencriptacion">
 
-                <div class="conteiner2">
-                    <div class="contenedorImagenMuñeco">
-                        <img src="imagenes/Muñeco.png" class="imgMuñeco" alt="ImagenMuñeco">
+                <div class="desencriptacion__div">
+                    <div class="desencriptacion__contenedorImagenMuñeco">
+                        <img src="imagenes/Muñeco.png" class="desencriptacion__imgMuñeco" alt="ImagenMuñeco">
                     </div>
-                    <p class="avisoTextoFaltante">Ningun mensaje fue encontrado</p>
-                    <p class="avisoIngresarTexto">Ingrese el texto que desees encriptar o desencriptar</p>
-                    <textarea class="textoDesencriptado" readonly></textarea>
-                    <button class="botonCopiar">Copiar</button>
+                    <p class="desencriptacion__avisoTextoFaltante">Ningun mensaje fue encontrado</p>
+                    <p class="desencriptacion__avisoIngresarTexto">Ingrese el texto que desees encriptar o desencriptar</p>
+                    <textarea class="desencriptacion__textoDesencriptado" readonly></textarea>
+                    <button class="desencriptacion__botonCopiar">Copiar</button>
                 </div>
 
             </section>

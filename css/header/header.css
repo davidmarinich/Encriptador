@@ -1,0 +1,22 @@
+header{
+    padding-top: 3.7vh;
+    padding-left: 2.5vw;
+    height: 8.93vh;
+}
+
+.header__div{
+    display: flex;
+    align-items: flex-start;
+}
+
+.header__img{
+    height: 5vh;
+}
+
+@media only screen and (max-width: 821px) {
+
+    header{
+        height: 8.93vh;
+    }
+
+}

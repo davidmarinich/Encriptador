@@ -1,13 +1,13 @@
 //Escuchar el boton y mostrar texto ingresado en consola
-var botonAdicionar = document.querySelector("#botonEncriptacion");
-var botonDesencriptar = document.querySelector(".botonDesencriptar");
-var contenedorImagenMuñeco = document.querySelector(".contenedorImagenMuñeco");
-var avisoTextoFaltante = document.querySelector(".avisoTextoFaltante");
-var avisoIngresarTexto = document.querySelector(".avisoIngresarTexto");
-var textoDesencriptado = document.querySelector(".textoDesencriptado");
-var botonCopiar = document.querySelector(".botonCopiar");
+var botonAdicionar = document.querySelector(".encriptacion__botonEncriptar");
+var botonDesencriptar = document.querySelector(".encriptacion__botonDesencriptar");
+var contenedorImagenMuñeco = document.querySelector(".desencriptacion__contenedorImagenMuñeco");
+var avisoTextoFaltante = document.querySelector(".desencriptacion__avisoTextoFaltante");
+var avisoIngresarTexto = document.querySelector(".desencriptacion__avisoIngresarTexto");
+var textoDesencriptado = document.querySelector(".desencriptacion__textoDesencriptado");
+var botonCopiar = document.querySelector(".desencriptacion__botonCopiar");
 var conteiner = document.querySelector(".conteiner");
-var conteiner2 = document.querySelector(".conteiner2");
+var conteiner2 = document.querySelector(".desencriptacion__div");
 
 botonAdicionar.addEventListener("click",encriptar);
 botonDesencriptar.addEventListener("click",desencriptar);
@@ -16,9 +16,9 @@ botonCopiar.addEventListener("click",copiar);
 
 function encriptar(){
 	event.preventDefault();
-	var campoEscritura = document.querySelector(".textareaEncriptacion");
+	var campoEscritura = document.querySelector(".encriptacion__textAerea");
 	if (campoEscritura.value.length > 0){
-		var campo = document.querySelector(".divTextarea");
+		var campo = document.querySelector(".encriptacion__divTextarea");
 	    var contenido = capturarTextarea(campo);
 	    var texto_desencriptado = reemplazarLetras(contenido);
 	    ocultar();
@@ -38,9 +38,9 @@ function ocultar(){
 
 function desencriptar(){
 	event.preventDefault();
-	var campoEscritura = document.querySelector(".textareaEncriptacion");
+	var campoEscritura = document.querySelector(".encriptacion__textAerea");
 	if (campoEscritura.value.length > 0){
-		var campo = document.querySelector(".divTextarea");
+		var campo = document.querySelector(".encriptacion__divTextarea");
 	    var contenido = capturarTextarea(campo);
 	    var texto_desencriptado = reemplazarLetrasDesencriptar(contenido);
 	    ocultar();
@@ -50,7 +50,7 @@ function desencriptar(){
 
 //Funcion para extraer el contenido del textarea
 function capturarTextarea(campo){
-	var texto = campo.querySelector(".textareaEncriptacion");
+	var texto = campo.querySelector(".encriptacion__textAerea");
 	var textoContenido = texto.value;
 	return textoContenido;
 };

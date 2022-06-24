@@ -1,0 +1,177 @@
+.encriptacion{
+    display: flex;
+    width: 70%;
+    justify-content: end;
+}
+
+.encriptacion__form{
+    display: flex;
+    flex-direction: column;
+    width: 83%;
+}
+
+.encriptacion__divTextarea{
+    display: flex;
+    align-self: center;
+    width: 100%;
+    height: 61.4vh;
+}
+
+.encriptacion__textAerea{
+    padding-top: 10vh;
+    width: 100%;
+    height: 100%;
+    background: #E5E5E5;
+    font-size: 4vh;
+    font-weight: bold;
+    color: #0A3871;
+    border: 0 solid transparent;
+    outline: none;
+    resize: none;
+}
+
+textarea::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8em;
+    color:#0A3871;
+}
+
+.encriptacion__textAerea:hover{
+    cursor: pointer;
+}
+
+.encriptacion__divAvisoEscritura{
+    margin-top: 1vh;
+}
+
+.encriptacion__avisoEscritura{
+    font-size: 2.5vh;
+}
+
+.encriptacion__signoExclamacion{
+    height: 0.8em;
+    width: auto;
+    margin-right: 0.4em;
+}
+
+.encriptacion__divBotonesFormulario{
+    display: flex;
+    border: none;
+    width: 100%;
+    height: 8.5vh;
+    margin-top: 1.4vh;
+}
+
+.encriptacion__botonesFormulario{
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+.encriptacion__botonEncriptar{
+    height: 100%;
+    width: 49%;
+    border-radius: .8em;
+    background: #0A3871;
+    color: white;
+    font-size: 1.2em;
+    border: 0.1em solid #0A3871;
+}
+
+.encriptacion__botonEncriptar:hover{
+    cursor: pointer;
+    background: #000D50;
+    transition: .7s all;
+}
+
+.encriptacion__botonDesencriptar{
+    background: #E5E5E5;
+    height: 100%;
+    width: 49%;
+    border-radius: .8em;
+    color: #0A3871;
+    font-size: 1.2em;
+    border: 0.1em solid #0A3871;
+}
+
+.encriptacion__botonDesencriptar:hover{
+    cursor: pointer;
+    background: #D3D3D3;
+    transition: .7s all;
+}
+
+.invisible{
+    display:none;
+}
+
+.block{
+    display: block;
+}
+
+@media only screen and (max-width: 821px) {
+
+    .encriptacion{
+        width: 89%;
+        justify-content: center;
+    }
+
+    .encriptacion__form{
+        width: 100%;
+    }
+
+    .encriptacion__divTextarea{
+        height: 47vh;
+    }
+
+    .encriptacion__botonesFormulario{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-around;
+    }
+
+}
+
+@media only screen and (max-width: 415px) {
+
+    .encriptacion{
+        height: 60.5vh;
+    }
+    
+    .encriptacion__divTextarea{
+        height: 38vh;
+    }
+    
+    .encriptacion__divBotonesFormulario{
+        height: 18vh;
+    }
+    
+    .encriptacion__botonesFormulario{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+    }
+    
+    .encriptacion__botonEncriptar{
+        display: block;
+        margin: auto;
+        min-width: 95%;
+        height: 45%;
+    }
+    
+    .encriptacion__botonDesencriptar{
+        display: block;
+        bottom: 0;
+        min-width: 95%;
+        height: 45%;
+    }
+    
+    .encriptacion__avisoEscritura{
+        font-size: 2vh;
+    }
+    
+}
+
+

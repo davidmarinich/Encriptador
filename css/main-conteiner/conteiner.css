@@ -1,0 +1,15 @@
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 83vh;
+}
+
+@media only screen and (max-width: 821px) {
+    .conteiner{
+        flex-direction: column;
+        height: 85.9vh;
+        align-items: center;
+    }
+
+}
