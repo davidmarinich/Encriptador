@@ -2,8 +2,8 @@
 <html lang="es"> 
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Encriptador de textos</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="icon" href="Vector.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -14,7 +14,7 @@
 
         <header>
             <div class="divHeader">
-                <h1><img src="imagenes/Logo.png" class="imgHeader" alt="logo" id="logo"></h1>
+                <h1><img src="imagenes/Logo.png" class="imgHeader" alt="logo"></h1>
             </div>
         </header>
 
@@ -43,13 +43,15 @@
             
             <section class="desencriptacion">
 
-                <textarea class="textoDesencriptado" readonly></textarea>
-                <div class="contenedorImagenMuñeco">
-                    <img src="imagenes/Muñeco.png" class="imgMuñeco" alt="ImagenMuñeco">
+                <div class="conteiner2">
+                    <div class="contenedorImagenMuñeco">
+                        <img src="imagenes/Muñeco.png" class="imgMuñeco" alt="ImagenMuñeco">
+                    </div>
+                    <p class="avisoTextoFaltante">Ningun mensaje fue encontrado</p>
+                    <p class="avisoIngresarTexto">Ingrese el texto que desees encriptar o desencriptar</p>
+                    <textarea class="textoDesencriptado" readonly></textarea>
+                    <button class="botonCopiar">Copiar</button>
                 </div>
-                <p class="avisoTextoFaltante">Ningun mensaje fue encontrado</p>
-                <p class="avisoIngresarTexto">Ingrese el texto que desees encriptar o desencriptar</p>
-                <button class="botonCopiar">Copiar</button>
 
             </section>
 

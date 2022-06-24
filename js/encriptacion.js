@@ -6,6 +6,8 @@ var avisoTextoFaltante = document.querySelector(".avisoTextoFaltante");
 var avisoIngresarTexto = document.querySelector(".avisoIngresarTexto");
 var textoDesencriptado = document.querySelector(".textoDesencriptado");
 var botonCopiar = document.querySelector(".botonCopiar");
+var conteiner = document.querySelector(".conteiner");
+var conteiner2 = document.querySelector(".conteiner2");
 
 botonAdicionar.addEventListener("click",encriptar);
 botonDesencriptar.addEventListener("click",desencriptar);
@@ -30,6 +32,8 @@ function ocultar(){
     avisoIngresarTexto.classList.add("invisible");
     textoDesencriptado.classList.add("block");
     botonCopiar.classList.add("block");
+	conteiner.classList.add("extendConteiner");
+	conteiner2.classList.add("extendConteiner2");
 }
 
 function desencriptar(){

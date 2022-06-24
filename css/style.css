@@ -3,60 +3,57 @@
  }
 
 body{
-    position: relative;
     background: #E5E5E5;
     font-family: 'Inter', sans-serif;
-    width: 100%;
 }
 
-header{  
-    display: inline-block;  
-    margin-top: 3vh;
-    margin-left: 2.5em;
-    width: fit-content;
+header{
+    padding-top: 3.7vh;
+    padding-left: 2.5vw;
+    height: 8.93vh;
 }
 
 .divHeader{
-    display: inline-block;
-    width: fit-content;
-    height: fit-content;
+    display: flex;
+    align-items: flex-start;
 }
 
 header img{
-    display: inline-block;
     height: 5vh;
-    width: auto;
 }
 
 .conteiner{
-    width: 100%;
     display: flex;
     flex-direction: row;
+    width: 100%;
+    height: 83vh;
 }
 
 .encriptacion{
-    display: inline-block;
-    width: 51%;
-    margin: auto 0 auto 23em;
+    display: flex;
+    width: 70%;
+    justify-content: end;
 }
 
 .formEncriptacion{
-    width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 83%;
 }
 
 .divTextarea{
-    display: block;
-    top: 0;
+    display: flex;
+    align-self: center;
     width: 100%;
-    height: 35em;
+    height: 61.4vh;
 }
 
 .textareaEncriptacion{
+    padding-top: 10vh;
     width: 100%;
     height: 100%;
     background: #E5E5E5;
-    font-size: 3.5em;
+    font-size: 4vh;
     font-weight: bold;
     color: #0A3871;
     border: 0 solid transparent;
@@ -75,31 +72,28 @@ textarea::placeholder {
 }
 
 .divAvisoEscritura{
-    margin-top: 15.5em;
-    height: 2.8vh;
+    margin-top: 1vh;
 }
 
 .avisoEscritura{
-    height: fit-content;
-    font-size: 2em;
+    font-size: 2.5vh;
 }
 
 .signoExclamacion{
-    height: 0.9em;
+    height: 0.8em;
     width: auto;
-    margin-right: 0.5em;
+    margin-right: 0.4em;
 }
 
 .divBotonesFormulario{
     display: flex;
     border: none;
     width: 100%;
-    height: 6.5em;
-    margin-top: 1.5vh;
+    height: 8.5vh;
+    margin-top: 1.4vh;
 }
 
 .botonesFormulario{
-    position: relative;
     display: flex;
     justify-content: space-between;
     border: none;
@@ -110,11 +104,10 @@ textarea::placeholder {
 .botonEncriptar{
     height: 100%;
     width: 49%;
-    border-radius: 1.563em;
+    border-radius: .8em;
     background: #0A3871;
     color: white;
-    font-size: 1.7em;
-    font-weight: bold;
+    font-size: 1.2em;
     border: 0.1em solid #0A3871;
 }
 
@@ -128,10 +121,9 @@ textarea::placeholder {
     background: #E5E5E5;
     height: 100%;
     width: 49%;
-    border-radius: 1.563em;
+    border-radius: .8em;
     color: #0A3871;
-    font-size: 1.7em;
-    font-weight: bold;
+    font-size: 1.2em;
     border: 0.1em solid #0A3871;
 }
 
@@ -142,20 +134,28 @@ textarea::placeholder {
 }
 
 .desencriptacion{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    height: 83vh;
+}
+
+.conteiner2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: white;
-    width: 25%;
-    height: 68em;
-    margin: 0 0 0 13em;
-    border-radius: 4vh;
+    width: 75%;
+    height: 100%;
+    border-radius: 1.5em;
 }
 
 .contenedorImagenMuñeco{
-    width: 100%;
-    height: 30em;
-    margin-top: 9em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
+    display: flex;
+    width: 98%;
+    height: 30vh;
+    margin: 0 auto 0 auto;
 }
 
 .imgMuñeco{
@@ -165,38 +165,28 @@ textarea::placeholder {
 }
 
 .avisoTextoFaltante{
-    width: 100%;
-    height: fit-content;
-    margin-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
+    width: 93%;
+    margin: 2vh auto 0 auto;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3vh;
     font-weight: bolder;
     color: #343A40;
 }
 
 .avisoIngresarTexto{
     width: 100%;
-    height: fit-content;
-    margin-top: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
+    margin: 2vh auto 0 auto;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.1vh;
     color: #343A40;
 }
 
 .textoDesencriptado{
-    box-sizing: border-box;
     display: none;
     width: 85%;
-    height: 75%;
-    margin: 1em 1em 0 2em;
+    height: 70%;
     background: white;
-    font-size: 3em;
+    font-size: 3vh;
     font-weight: bold;
     color: #495057;
     border: 0 solid transparent;
@@ -206,13 +196,12 @@ textarea::placeholder {
 
 .botonCopiar{
     display: none;
-    margin: 2.41em 1em 1em 2.55em; 
-    height: 3.824em;
+    height: 8.5vh;
     width: 80%;
-    border-radius: 1.563em;
+    border-radius: .8em;
     color: #0A3871;
     background: white;
-    font-size: 1.7em;
+    font-size: 1.2em;
     font-weight: bold;
     border: 0.1em solid #0A3871;
 }
@@ -237,15 +226,13 @@ footer ul{
     align-content: center;
     justify-content: space-between;
     margin: 0 auto;
-    height: 3.9em;
     width: 7.4em;
-    font-size: 1.3vh;
+    font-size: 1.31vh;
 }
 
 footer li{
     box-sizing: border-box;
     justify-content: center;
-    height: 3.9em;
     width: 5vh;
 }
 
@@ -268,24 +255,29 @@ footer i{
     display: block;
 }
 
-@media only screen and (max-width: 105em) {
-header {
-    margin-left: 0;
-    margin-top: 4vh;
+@media only screen and (max-width: 821px) {
+
+header{
+    height: 8.93vh;
 }
 
 .conteiner{
     flex-direction: column;
+    height: 85.9vh;
+    align-items: center;
 }
 
 .encriptacion{
-    margin: 5.3vh auto 0 auto;
-    height: 58.2vh;
-    width: 90%;
+    width: 89%;
+    justify-content: center;
+}
+
+.formEncriptacion{
+    width: 100%;
 }
 
 .divTextarea{
-    height: 43.8vh;
+    height: 47vh;
 }
 
 .botonesFormulario{
@@ -295,101 +287,54 @@ header {
     align-content: space-around;
 }
 
-.botonEncriptar{
-    width: 48%;
-}
-
-.botonDesencriptar{
-    right: 0;
-    width: 48%;
-}
-
-.divAvisoEscritura{
-    margin-top: 2vh;
-}
-
-.avisoEscritura{
-    height: fit-content;
-    font-size: 1.5em;
-}
-
-.signoExclamacion{
-    height: 0.8em;
-}
-
 .desencriptacion{
-    width: 90%;
-    height: fit-content;
-    margin: 5.39vh auto 2.6em auto;
+    width: 100%;
+    align-items: center;
 }
 
-.textoDesencriptado{
-    height: 10em;
-    margin: 1em auto 0 auto;
+.conteiner2{
+    height: 20vh;
+    width: 88%;
 }
 
 .contenedorImagenMuñeco{
     display: none;
-    margin-top: 5vh;
 }
 
 .avisoTextoFaltante{
-    margin-top: 4vh;
-    font-size: 2em;
-}
-
-.avisoIngresarTexto{
-    margin-bottom: 4vh;
-    font-size: 1.7em;
-}
-
-.botonCopiar{
-    width: 60%;
-    margin: 1.5em auto;
-    border-radius: 1.563em;
+    margin-top: 0;
 }
 
 footer{
-    margin: 0;
+    margin-top: 0;
 
+}
+
+.extendConteiner{
+    height: 130vh;
+}
+
+.extendConteiner2{
+    height: 60vh;
 }
 
 }
 
-@media only screen and (max-width: 48em) {
-
-header img{
-    height: 5vh;
-    width: auto;
-}
-
-
-.conteiner{
-    flex-direction: column;
-    height: fit-content;
-}
+@media only screen and (max-width: 415px) {
 
 .encriptacion{
-    margin: 5vh auto 0 auto;
-    height: 58.3vh;
-    width: 90%;
+    height: 60.5vh;
 }
 
 .divTextarea{
-    height: 40vh;
-}
-
-.textareaEncriptacion{
-    font-size: 4vh;
+    height: 38vh;
 }
 
 .divBotonesFormulario{
-    height: 16vh;
-    margin-top: 1vh;
+    height: 18vh;
 }
 
 .botonesFormulario{
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-around;
@@ -400,8 +345,6 @@ header img{
     margin: auto;
     min-width: 95%;
     height: 45%;
-    font-size: 3vh;
-    font-weight: 100;
 }
 
 .botonDesencriptar{
@@ -409,58 +352,10 @@ header img{
     bottom: 0;
     min-width: 95%;
     height: 45%;
-    font-size: 3vh;
-    font-weight: 100;
-}
-
-.divAvisoEscritura{
-    margin-top: 0;
-    height: fit-content;
 }
 
 .avisoEscritura{
-    font-size: 2.1vh;
-}
-
-.signoExclamacion{
-    height: 0.8em;
-}
-
-.desencriptacion{
-    width: 90%;
-    height: fit-content;
-    margin: 3.9vh auto 3.5vh auto;
-}
-
-.textoDesencriptado{
-    height: 10em;
-    margin: 1em auto 0 auto;
-}
-
-.contenedorImagenMuñeco{
-    display: none;
-}
-
-.avisoTextoFaltante{
-    margin-top: 3.5vh;
-    font-size: 2.5vh;
-    font-style: normal;
-}
-
-.avisoIngresarTexto{
-    margin-bottom: 3.5vh;
-    font-size: 2.2vh;
-}
-
-.botonCopiar{
-    width: 60%;
-    margin: 1.5em auto;
-    border-radius: 1.563em;
-}
-
-footer{
-    height: 5vh;
-
+    font-size: 2vh;
 }
 
 }
